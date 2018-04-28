@@ -28,3 +28,5 @@ __*[PushManager.getSubscription()](https://developer.mozilla.org/en-US/docs/Web/
 
 
 __*[Notification.Notification()](https://developer.mozilla.org/en-US/docs/Web/API/notification/Notification)*__
+
+__*[event.waitUntil()](https://developer.mozilla.org/en-US/docs/Web/API/ExtendableEvent/waitUntil)*__ This method takes a promise and the browser will keep the service worker alive and running until the promise passed in has resolved.
