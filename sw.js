@@ -7,9 +7,9 @@ self.addEventListener('push', function (event) {
   const title = 'Push Notification';
   const options = {
     body: 'Yay it works.',
-    icon: '/icon.png',
-    badge: '/badge.png',
-    sound: '/alarm.mp3'
+    icon: './icon.png',
+    badge: './badge.png',
+    sound: './alarm.mp3'
   };
 
   event.waitUntil(self.registration.showNotification(title, options));
