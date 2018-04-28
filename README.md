@@ -9,4 +9,8 @@
 devTools > application > Service Workers > during development check "Update on Reload" checkbox
 
 ### resources 
+
+The [PushManager.getSubscription()]() method of the PushManager interface retrieves an existing push subscription. It returns a Promise that resolves to a PushSubscription object containing details of an existing subscription. If no existing subscription exists, this resolves to a null value.
+
+
 [Notification.Notification()](https://developer.mozilla.org/en-US/docs/Web/API/notification/Notification)
