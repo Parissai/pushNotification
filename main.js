@@ -40,6 +40,13 @@ if ('serviceWorker' in navigator && 'PushManager' in window) { //check if servic
 }
 
 function updateBtn() {
+  if (Notification.permission === 'denied') { // web app will not be able to re-show the permission prompt and will not be able to subscribe the user
+    pushButton.textContent = 'Push Messaging Blocked.';
+    pushButton.disabled = true; // disable the button because permission is denied & user can't be subscribed
+    updateSubscriptionOnServer(null);
+    return;
+  }
+
   if (isSubscribed) {
     pushButton.textContent = 'Disable Push Messaging';
   } else {
